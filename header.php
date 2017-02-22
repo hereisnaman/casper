@@ -36,7 +36,7 @@
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </div>
     </nav><!-- #site-navigation -->
-
+<?php if (is_home()): ?>
     <div class="vertical-row">
         <div class="vertical">
             <div class="site-head-content inner">
@@ -156,6 +156,7 @@
             </div>
         </div>
     </div>
+<?php endif; ?>
 </header><!-- #masthead -->
 
 <main id="content" class="content" role="main">
